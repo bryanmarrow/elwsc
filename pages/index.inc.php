@@ -41,13 +41,41 @@
         <div class="hero-shape4 shape-mockup jump-reverse d-none d-md-block" data-top="1%" data-right="30%"><img
                 src="assets/img/shape/double-circle-1.png" alt="shapes"></div>
     </section>
-    <section class="event-section space-top bg-auto-repeat"
-        data-bg-src="assets/img/bg/event_bg_2.png">
+     <section class="space">
         <div class="container">
             <div class="title-area text-center"><span class="sub-title3">No lo trates de entender...</span>
                 <h2 class="sec-title">¡Solo vívelo!</h2>
                 <div class="line"></div>
             </div>
+            <div class="row justify-content-center">
+                <!-- <div class="col-xl-8 col-lg-10">
+                    <p class="mb-50 mt-n2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate</p>
+                </div> -->
+                <div class="col-xl-10">
+                    <div class="vs-video rounded-15"><img class="w-100" src="assets/img/evento_portada_elwsc2023.png"
+                            alt="meeting image"> <a href="https://www.youtube.com/watch?v=lPnD8RV-0o0"
+                            class="popup-video play-btn style2"><i class="fas fa-play"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup jump d-none d-lg-block" data-top="5%" data-left="0%"><img
+                src="assets/img/shape/dots-3.png" alt="shapes"></div>
+        <div class="shape-mockup jump" data-bottom="8%" data-left="0%"><img src="assets/img/shape/triangle-2.png"
+                alt="shapes"></div>
+        <div class="shape-mockup jump-reverse" data-bottom="10.5%" data-left="0%"><img
+                src="assets/img/shape/triangle-3.png" alt="shapes"></div>
+        <div class="shape-mockup jump-reverse d-none d-lg-block" data-top="10%" data-right="6%"><img
+                src="assets/img/shape/dots-triangle.png" alt="shapes"></div>
+        <div class="shape-mockup movingX d-none d-lg-block" data-bottom="10%" data-right="6%"><img
+                src="assets/img/shape/line-3.png" alt="shapes"></div>
+    </section>
+    <section class="event-section bg-auto-repeat"
+        data-bg-src="assets/img/bg/event_bg_2.png">
+        <div class="container">
+            
             <div class="row">
                 <div class="col-xl-3 col-md-6 event-box">
                     <div class="event-box_body">
@@ -80,7 +108,7 @@
                 <div class="col-xl-3 col-md-6 event-box">
                     <div class="event-box_body">
                         <div class="event-box_img"><img src="assets/img/event/e-5.jpg" alt="event image"></div>
-                        <h3 class="event-box_title"><a href="event-details.html">Más de 2mil bailarines en escena</a></h3><a
+                        <h3 class="event-box_title"><a href="event-details.html">Más de 20 países presentes en escena</a></h3><a
                             href="assets/img/event/e-5.jpg" class="icon-btn popup-image">+</a>
                     </div>
                 </div>
