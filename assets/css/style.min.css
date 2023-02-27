@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --theme-color: #f0401b;
-    --theme-color2: #ff6508;
+    --theme-color: #5c2326;
+    --theme-color2: #b63942;
     --title-color: #171b2a;
     --body-color: #74787c;
     --smoke-color: #f8f8f8;
@@ -26,7 +26,7 @@
     --section-space: 120px;
     --section-space-mobile: 80px;
     --section-title-space: 70px;
-    --ripple-ani-duration: 5s
+    --ripple-ani-duration: 5s;
 }
 
 .home2,
@@ -7786,13 +7786,14 @@ ul.comment-list .vs-comment:last-child:not(.children.vs-comment)>.vs-post-commen
 }
 
 .hero-title {
-    color: var(--white-color)
+    /* color: var(--white-color) */
+    color: #ffeb78;
 }
 
 .hero-style1 {
     position: relative;
     z-index: 2;
-    padding: 190px 0 275px 0;
+    padding: 100px 0 275px 0;
     color: var(--white-color)
 }
 
@@ -7800,7 +7801,7 @@ ul.comment-list .vs-comment:last-child:not(.children.vs-comment)>.vs-post-commen
     font-size: 72px;
     margin-bottom: 27px;
     font-weight: 800;
-    letter-spacing: -.05em;
+    letter-spacing: -.02em;
     line-height: 1.1
 }
 
@@ -8260,8 +8261,11 @@ ul.comment-list .vs-comment:last-child:not(.children.vs-comment)>.vs-post-commen
 }
 
 @media (max-width:991px) {
-    .hero-style1 {
+    /* .hero-style1 {
         padding: 100px 0 150px 0
+    } */
+    .hero-style1 {
+        padding: 100px 0 294px 0;
     }
 
     .hero-style1 .hero-title {
@@ -8283,7 +8287,7 @@ ul.comment-list .vs-comment:last-child:not(.children.vs-comment)>.vs-post-commen
 
     .hero-img {
         position: absolute;
-        bottom: 10px;
+        bottom: 7px;
         right: 0;
         max-width: 380px
     }
@@ -8355,7 +8359,7 @@ ul.comment-list .vs-comment:last-child:not(.children.vs-comment)>.vs-post-commen
     }
 
     .hero-img {
-        max-width: 280px
+        max-width: 378px
     }
 
     .hero-content-style3 .hero-date {
@@ -8372,9 +8376,9 @@ ul.comment-list .vs-comment:last-child:not(.children.vs-comment)>.vs-post-commen
 }
 
 @media (max-width:575px) {
-    .hero-img {
+    /* .hero-img {
         display: none
-    }
+    } */
 
     .hero-style1 {
         text-align: center
@@ -17912,7 +17916,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .team-block_title {
-    color: var(--white-color);
+    /* color: var(--white-color); */
     font-size: 24px;
     margin-bottom: 5px
 }

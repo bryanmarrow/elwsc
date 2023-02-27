@@ -2,7 +2,7 @@
 
 
 define('HOST', 'localhost');
-define('DB', 'eurosonl_elvdc2021');
+define('DB', 'eurosonl_elwsc2023');
 define ('USER','eurosonl_btech');
 define('PASSWORD', 'K%M$dqbV5z8q');
 define('CHARSET', 'utf8mb4');

@@ -34,6 +34,99 @@ require $rootPath."languages/lang_config.php";
   
   <body>
    
+  <div class="popup-search-box d-none d-lg-block"><button class="searchClose border-theme text-theme"><i
+                class="fal fa-times"></i></button>
+        <form action="#"><input type="text" class="border-theme" placeholder="What are you looking for?"> <button
+                type="submit"><i class="fal fa-search"></i></button></form>
+    </div>
+    <div class="sidemenu-wrapper">
+        <div class="sidemenu-content"><button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+            <div class="widget">
+                <div class="vs-widget-about">
+                    <div class="about-logo"><a href="index.html"><img src="assets/img/logo.png" alt="Evona"></a></div>
+                    <p class="about-text">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrice
+                        gravida isus commodo viverra.</p>
+                    <div class="multi-social"><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a> <a
+                            href="https://twitter.com/"><i class="fab fa-twitter"></i></a> <a
+                            href="https://instagram.com/"><i class="fab fa-instagram"></i></a> <a
+                            href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+            <div class="widget">
+                <h4 class="widget_title">Popular Posts</h4>
+                <div class="recent-post-wrap">
+                    <div class="recent-post">
+                        <div class="media-img"><a href="blog-details.html"><img src="assets/img/blog/thumb-1.jpg"
+                                    alt="Blog Image"></a></div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a href="blog-details.html">You can now listen to the entire</a></h4>
+                            <div class="recent-post-meta"><a href="blog.html"><i class="fal fa-calendar-alt"></i> Apr
+                                    22, 2022</a> <a href="blog.html">3 Mins Read</a></div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img"><a href="blog-details.html"><img src="assets/img/blog/thumb-2.jpg"
+                                    alt="Blog Image"></a></div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a href="blog-details.html">How to in success business</a></h4>
+                            <div class="recent-post-meta"><a href="blog.html"><i class="fal fa-calendar-alt"></i> Apr
+                                    23, 2022</a> <a href="blog.html">3 Mins Read</a></div>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="media-img"><a href="blog-details.html"><img src="assets/img/blog/thumb-3.jpg"
+                                    alt="Blog Image"></a></div>
+                        <div class="media-body">
+                            <h4 class="post-title"><a href="blog-details.html">Super business plan in 2022</a></h4>
+                            <div class="recent-post-meta"><a href="blog.html"><i class="fal fa-calendar-alt"></i> Apr
+                                    24, 2022</a> <a href="blog.html">3 Mins Read</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area"><button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo"><a href="index.html"><img src="assets/img/logo/logo_elwsc.png" alt="Evona"></a></div>
+            <div class="vs-mobile-menu">
+            <ul>
+                                            <li>
+                                                <a class="" href="<?= $rootPath ?>"><?=  index_inicio ?></a>
+                                            </li>
+                                            
+                                            <li class="menu-item-has-children d-none"><a href="#"><?=  index_campeonato ?></a>
+                                                <ul class="sub-menu">
+                                                    <?php  if(isset($_SESSION['lang'])){ ?>
+                                                        <?php
+                                                            if($_SESSION['lang']=='es'){
+                                                                        
+                                                        ?>
+                                                            <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/reglamento-elwsc2021"><?= index_reglamento ?></a></li>
+                                                        
+                                                        <?php
+
+                                                            }  if($_SESSION['lang']=='en'){
+                                                                        
+                                                        ?>
+                                                        
+                                                            <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/rules-elwsc2021">Rules</a></li>
+                                                        <?php } ?>
+                                                    <?php }else{ ?>  
+                                                        <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/reglamento-elwsc2021"><?= index_reglamento ?></a></li>
+                                                    <?php } ?>  
+                                                    <!-- <li><a href="event-details.html">Event Details</a></li> -->
+                                                </ul>
+                                            </li>
+                                            
+                                            <li><a href="line-up"><?= index_lineup ?></a></li>
+                                            <li><a href="conciertos"><?= index_conciertos ?></a></li>
+                                            <li><a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">Hotel</a></li>
+                                        </ul>
+            </div>
+        </div>
+    </div>
+   
   
   <header class="vs-header header-layout3">
         <div class="header-top d-none d-lg-block">
@@ -54,9 +147,9 @@ require $rootPath."languages/lang_config.php";
                     <div class="col-auto">
                         <div class="header-links">
                             <ul>
-                                <li><a href="https://facebook.com/eurosonlatino"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.youtube.com/Eurosonlatino"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="https://instagram.com/eurosonlatino"><i class="fab fa-instagram"></i></a></li>
+                                <li><a target="_blank" href="https://facebook.com/eurosonlatino"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/Eurosonlatino"><i class="fab fa-youtube"></i></a></li>
+                                <li><a target="_blank" href="https://instagram.com/eurosonlatino"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +174,7 @@ require $rootPath."languages/lang_config.php";
                                                 <a class="" href="<?= $rootPath ?>"><?=  index_inicio ?></a>
                                             </li>
                                             
-                                            <li class="menu-item-has-children"><a href="#"><?=  index_campeonato ?></a>
+                                            <li class="menu-item-has-children d-none"><a href="#"><?=  index_campeonato ?></a>
                                                 <ul class="sub-menu">
                                                     <?php  if(isset($_SESSION['lang'])){ ?>
                                                         <?php
@@ -105,9 +198,9 @@ require $rootPath."languages/lang_config.php";
                                                 </ul>
                                             </li>
                                             
-                                            <li><a href="#"><?= index_lineup ?></a></li>
-                                            <li><a href="#"><?= index_conciertos ?></a></li>
-                                            <li><a href="#">Hotel</a></li>
+                                            <li><a href="line-up"><?= index_lineup ?></a></li>
+                                            <li><a href="conciertos"><?= index_conciertos ?></a></li>
+                                            <li><a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">Hotel</a></li>
                                         </ul>
                                     </nav>
                                 </div>
