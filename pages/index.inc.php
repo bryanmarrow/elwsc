@@ -233,7 +233,7 @@
                         </div>
                         <div class="team-grid_info">
                             <h3 class="team-grid_title"><a href="speaker-details.html"><?= $artista['nombre'] ?></a></h3><span
-                                class="team-grid_desig">Perú/Italia</span>
+                                class="team-grid_desig"><?= $artista['pais'] ?></span>
                         </div>
                     </div>
                     </div>
@@ -253,13 +253,13 @@
       class="space-top space-extra-bottom"
       data-bg-src="assets/img/bg/bg-15.jpg"
     >
-      <div class="container">
+      <div class="container-fluid">
         <div class="title-area text-center">
           <h2 class="sec-title">Costos</h2>
           <span class="sub-title text-uppercase">Vigencia: 1 de Abril, 2023</span>
         </div>
-        <div class="row vs-carousel" data-slide-show="2" data-arrows="true">
-          <div class="col-lg-6 col-md-6">
+        <div class="row vs-carousel" data-slide-show="3" data-arrows="true">
+          <div class="col-lg-4 col-md-6">
             <div class="price-card">
               <h3 class="price-card_title">Night Pass</h3>
               <span class="h1 price-card_price">$140.00</span>
@@ -284,11 +284,11 @@
                   <span class="list-text">No incluye Workshops</span>
                 </li>
               </ul>
-              <!-- <a href="shop.html" class="vs-btn">Buy Tickets</a> -->
-              <!-- <span class="condition">Our prices includes 10% charge</span> -->
+              <a href="<?= $rootPath?>/tickets" class="vs-btn"><?= index_comprartickets ?></a>
+              
             </div>
           </div>
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="price-card">
               <h3 class="price-card_title">Full Dancer Pass</h3>
               <span class="h1 price-card_price">$160.00</span>
@@ -313,14 +313,19 @@
                   <span class="list-title">WORKSHOPS</span>
                 </li>
               </ul>
+              <a href="<?= $rootPath?>/tickets" class="vs-btn"><?= index_comprartickets ?></a>
               <!-- <a href="shop.html" class="vs-btn">Buy Tickets</a> -->
               <!-- <span class="condition">Our prices includes 10% charge</span> -->
             </div>
           </div>
           
-        </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="top-event-img"><img src="assets/img/promo5x4_elwsc2023.jpg" alt="event"> <span
+                        class="event-date"><i class="fas fa-calendar-alt"></i> ¡PROMOCIÓN!</span></div>
+                </div>
+            </div>
       </div>
-      <!-- <div
+      <div
         class="shape-mockup rotate d-none d-md-block"
         data-top="10%"
         data-left="6%"
@@ -347,7 +352,7 @@
         data-right="6%"
       >
         <img src="assets/img/shape/plus-2.png" alt="shapes" />
-      </div> -->
+      </div>
     </section>
     
     

@@ -13,7 +13,7 @@ define('index_lineup','Line Up');
 define('index_comprartickets','Get tickets/Buy tickets');
 define('index_contactoviawhatsapp','Whatsapp Contact');
 define('index_eurosonlatinopresenta','Euroson Latino presents');
-define('index_fechaevento','December 6-11, 2021');
+define('index_fechaevento','December 4-9, 2023');
 define('index_competencias_shows_workshops','World Championship | Intl. Shows | Workshops | Concerts | Salsa & Bachata Social Parties');
 define('index_transmision_en_vivo','Grand Oasis Cancún - México');
 define('index_se_parte_de_la_historia','Come & Be part of the history!');

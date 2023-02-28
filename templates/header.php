@@ -90,39 +90,7 @@ require $rootPath."languages/lang_config.php";
         <div class="vs-menu-area"><button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo"><a href="index.html"><img src="assets/img/logo/logo_elwsc.png" alt="Evona"></a></div>
             <div class="vs-mobile-menu">
-            <ul>
-                                            <li>
-                                                <a class="" href="<?= $rootPath ?>"><?=  index_inicio ?></a>
-                                            </li>
-                                            
-                                            <li class="menu-item-has-children d-none"><a href="#"><?=  index_campeonato ?></a>
-                                                <ul class="sub-menu">
-                                                    <?php  if(isset($_SESSION['lang'])){ ?>
-                                                        <?php
-                                                            if($_SESSION['lang']=='es'){
-                                                                        
-                                                        ?>
-                                                            <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/reglamento-elwsc2021"><?= index_reglamento ?></a></li>
-                                                        
-                                                        <?php
-
-                                                            }  if($_SESSION['lang']=='en'){
-                                                                        
-                                                        ?>
-                                                        
-                                                            <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/rules-elwsc2021">Rules</a></li>
-                                                        <?php } ?>
-                                                    <?php }else{ ?>  
-                                                        <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/reglamento-elwsc2021"><?= index_reglamento ?></a></li>
-                                                    <?php } ?>  
-                                                    <!-- <li><a href="event-details.html">Event Details</a></li> -->
-                                                </ul>
-                                            </li>
-                                            
-                                            <li><a href="line-up"><?= index_lineup ?></a></li>
-                                            <li><a href="conciertos"><?= index_conciertos ?></a></li>
-                                            <li><a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">Hotel</a></li>
-                                        </ul>
+                <?php require 'menu.php' ?>
             </div>
         </div>
     </div>
@@ -169,39 +137,7 @@ require $rootPath."languages/lang_config.php";
                             <div class="row align-items-center justify-content-between">
                                 <div class="col-auto">
                                     <nav class="main-menu menu-style1 d-none d-lg-inline-block">
-                                        <ul>
-                                            <li>
-                                                <a class="" href="<?= $rootPath ?>"><?=  index_inicio ?></a>
-                                            </li>
-                                            
-                                            <li class="menu-item-has-children d-none"><a href="#"><?=  index_campeonato ?></a>
-                                                <ul class="sub-menu">
-                                                    <?php  if(isset($_SESSION['lang'])){ ?>
-                                                        <?php
-                                                            if($_SESSION['lang']=='es'){
-                                                                        
-                                                        ?>
-                                                            <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/reglamento-elwsc2021"><?= index_reglamento ?></a></li>
-                                                        
-                                                        <?php
-
-                                                            }  if($_SESSION['lang']=='en'){
-                                                                        
-                                                        ?>
-                                                        
-                                                            <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/rules-elwsc2021">Rules</a></li>
-                                                        <?php } ?>
-                                                    <?php }else{ ?>  
-                                                        <li><a class="dropdown-item font-size-base" target="_blank" href="http://bit.ly/reglamento-elwsc2021"><?= index_reglamento ?></a></li>
-                                                    <?php } ?>  
-                                                    <!-- <li><a href="event-details.html">Event Details</a></li> -->
-                                                </ul>
-                                            </li>
-                                            
-                                            <li><a href="line-up"><?= index_lineup ?></a></li>
-                                            <li><a href="conciertos"><?= index_conciertos ?></a></li>
-                                            <li><a href="https://oasishoteles.com/es/hoteles/grand-oasis-cancun" target="_blank">Hotel</a></li>
-                                        </ul>
+                                    <?php require 'menu.php' ?>
                                     </nav>
                                 </div>
                                 <div class="col d-block d-lg-none"><button type="button" class="vs-menu-toggle"><i
