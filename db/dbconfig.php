@@ -2,9 +2,9 @@
 
 
 define('HOST', 'localhost');
-define('DB', 'u291087583_elwsc2024');
-define ('USER','u291087583_elwsc_mrb');
-define('PASSWORD', 'Nl5*O7GAVX;');
+define('DB', 'u291087583_elwsc_2024');
+define ('USER','u291087583_mrb');
+define('PASSWORD', '?4JpQ~r7');
 define('CHARSET', 'utf8mb4');
 
 class Database{
