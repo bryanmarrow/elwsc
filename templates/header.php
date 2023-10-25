@@ -2,7 +2,7 @@
 
 session_start();
 
-require $rootPath."languages/lang_config.php";
+require "languages/lang_config.php";
 
 
 // require $rootPath.'/db/sesionWeb.php';
@@ -95,7 +95,9 @@ require $rootPath."languages/lang_config.php";
         </div>
     </div>
    
-  
+   
+
+    
   <header class="vs-header header-layout3">
         <div class="header-top d-none d-lg-block">
             <div class="container">
@@ -108,13 +110,26 @@ require $rootPath."languages/lang_config.php";
                                         <i class="fas fa-phone"></i>
                                         <?= index_contactoviawhatsapp ?> 
                                     </a>
-                                </li>
+                                </li>                                
                             </ul>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="header-links">
                             <ul>
+                                <li>Language :</li>
+                                <li>
+                                    <form method='get' action='' id='form_lang'>
+                                        <select name='lang' onchange='changeLang();'>
+                                            <option value='es'
+                                            <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'es'){ echo "selected"; } ?>>Español
+                                            </option>
+                                            <option value='en'
+                                            <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'en'){ echo "selected"; } ?>>English
+                                            </option>
+                                        </select>
+                                    </form>
+                                </li>
                                 <li><a target="_blank" href="https://facebook.com/eurosonlatino"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a target="_blank" href="https://www.youtube.com/Eurosonlatino"><i class="fab fa-youtube"></i></a></li>
                                 <li><a target="_blank" href="https://instagram.com/eurosonlatino"><i class="fab fa-instagram"></i></a></li>
