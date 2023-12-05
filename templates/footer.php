@@ -30,6 +30,12 @@
         </div>
     </footer><a href="#" class="scrollToTop scroll-btn"><i class="far fa-long-arrow-up"></i></a>
 
+
+        <script>
+             function changeLang() {
+                document.getElementById('form_lang').submit();
+            }
+        </script>
         <script src="assets/js/jquery-3.5.0.min.js"></script>
         <script src="assets/js/slick.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
