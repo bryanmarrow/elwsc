@@ -25,7 +25,7 @@
         </div> -->
         <div class="footer-copyright">
             <div class="container">
-                <p class="copyright">Copyright © 2023 <a href="#">Euroson Latino</a>. Todos los derechos reservados</p>
+                <p class="copyright">Copyright © <?= date('Y') ?> <a href="#">Euroson Latino</a>. Todos los derechos reservados</p>
             </div>
         </div>
     </footer><a href="#" class="scrollToTop scroll-btn"><i class="far fa-long-arrow-up"></i></a>

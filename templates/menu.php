@@ -10,7 +10,7 @@
                     if($_SESSION['lang']=='es'){
                                 
                 ?>
-                    <li><a class="dropdown-item font-size-base" target="_blank" href="https://bit.ly/reglamento-elwsc2023"><?= index_reglamento ?></a></li>
+                    <li><a class="dropdown-item font-size-base d-none" target="_blank" href="https://bit.ly/reglamento-elwsc2023"><?= index_reglamento ?></a></li>
                 
                 <?php
 
@@ -18,19 +18,19 @@
                                 
                 ?>
                 
-                    <li><a class="dropdown-item font-size-base" target="_blank" href="https://bit.ly/rules_elwsc2023">Rules</a></li>
+                    <li><a class="dropdown-item font-size-base d-none" target="_blank" href="https://bit.ly/rules_elwsc2023">Rules</a></li>
                 <?php } ?>
             <?php }else{ ?>  
-                <li><a class="dropdown-item font-size-base" target="_blank" href="https://bit.ly/reglamento-elwsc2023"><?= index_reglamento ?></a></li>
+                <li><a class="dropdown-item font-size-base d-none" target="_blank" href="https://bit.ly/reglamento-elwsc2023"><?= index_reglamento ?></a></li>
             <?php } ?>  
-            <!-- <li><a href="event-details.html">Event Details</a></li> -->
+            <li><a href="#">Cómite de Competidores</a></li>
         </ul>
     </li>
     
-    <li><a href="line-up"><?= index_lineup ?></a></li>
-    <li><a href="conciertos"><?= index_conciertos ?></a></li>
-    <li><a href="hotel" >Hotel</a></li>
-    <li><a href="tickets" >Tickets</a></li>
+    <li class="d-none"><a  href="line-up"><?= index_lineup ?></a></li>
+    <li class="d-none"><a href="conciertos"><?= index_conciertos ?></a></li>
+    <li class="d-none"><a href="hotel" >Hotel</a></li>
+    <li ><a href="tickets" >Tickets</a></li>
     <li class="d-block d-lg-none mt-2">Language :</li>
     <li class="d-block d-lg-none">
         <form method='get' action='' id='form_lang'>
